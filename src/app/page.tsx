@@ -9,7 +9,7 @@ export default function Home() {
         </h2>
       </div>
       <div>
-        <h1 className="text-6xl font-bold text-center">Make anything you imagine 🪄</h1>
+        <h1 className="text-6xl font-bold text-center">🪄 OkMake anything you want automatically! 🪄</h1>
         <h2 className="text-2xl text-center font-light text-gray-500 pt-4">
           This whole page will be replaced when you run your template path.
         </h2>
