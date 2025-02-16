@@ -157,7 +157,7 @@ main {
 }
 
 .prompt-container {
-    margin: 4rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 .prompt-box {
@@ -234,7 +234,7 @@ main {
 }
 
 .preview-section {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding: 0 2rem;
     display: flex;
     justify-content: center;
