@@ -113,7 +113,7 @@ nav {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     text-align: center;
 }
 
@@ -130,7 +130,8 @@ main {
 .center-logo {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
 }
 
 .center-logo img {
