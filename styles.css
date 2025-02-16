@@ -127,6 +127,29 @@ main {
     opacity: 0;
 }
 
+.center-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.center-logo img {
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+}
+
+.center-logo img:hover {
+    transform: scale(1.05);
+}
+
+.disclaimer {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-style: italic;
+}
+
 .subtitle {
     font-size: 1.5rem;
     color: var(--text-secondary);
