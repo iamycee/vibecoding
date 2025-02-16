@@ -1460,4 +1460,16 @@ main {
     gap: 0.5rem;
     color: var(--text-secondary);
     font-size: 12px;
+}
+
+.watermark {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    z-index: 10;
+    pointer-events: none;
+    font-family: monospace;
 } 

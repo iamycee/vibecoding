@@ -610,6 +610,8 @@
                 </div>
             </div>
         </div>
+
+        <div class="watermark">Made by YC, with AI - Feb 2025</div>
     </main>
 
     <script>
@@ -913,7 +915,7 @@
                 setTimeout(() => {
                     isDeleting = true;
                     isWaiting = false;
-                }, 2000); // Show preview for 2 seconds before starting to delete
+                }, 1000); // Show preview for 1 second before starting to delete
             }
 
             if (isDeleting && currentCharacter === 0) {
@@ -921,11 +923,11 @@
                 currentPrompt = (currentPrompt + 1) % prompts.length;
             }
 
-            const typingSpeed = isDeleting ? 30 : 12; // Reduced from 25 to 12 for even faster typing
+            const typingSpeed = isDeleting ? 15 : 50; // Swapped speeds: typing slower (50ms), backspace faster (15ms)
             if (!isWaiting) {
                 setTimeout(typePrompt, typingSpeed);
             } else {
-                setTimeout(typePrompt, 2000);
+                setTimeout(typePrompt, 1000); // Reduced wait time to maintain 3-second cycle
             }
         }
 
