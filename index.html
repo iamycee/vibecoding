@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agensigner - Idea to design in seconds</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="lib/anime.min.js"></script>
+</head>
+<body>
+    <div class="background-animation">
+        <div class="dots"></div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="Agensigner">
+            <span>agensigner</span>
+        </div>
+        <div class="nav-right">
+            <button class="btn-primary">Get Started</button>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="title">Idea to design in seconds.</h1>
+        <p class="subtitle">Your AI-powered design companion</p>
+
+        <div class="prompt-container">
+            <div class="prompt-box">
+                <input type="text" id="promptInput" placeholder="Describe your design idea...">
+                <button class="generate-btn">Generate <i data-feather="arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="preview-card mobile-preview">
+                <div class="preview-header">
+                    <h3>Mobile App Home</h3>
+                    <span class="preview-tag">Mobile UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="mobile-frame">
+                            <div class="status-bar">
+                                <div class="time">9:41</div>
+                                <div class="status-icons">
+                                    <div class="signal"></div>
+                                    <div class="wifi"></div>
+                                    <div class="battery"></div>
+                                </div>
+                            </div>
+                            <div class="app-header">
+                                <div class="app-title"></div>
+                                <div class="header-actions"></div>
+                            </div>
+                            <div class="content-block">
+                                <div class="content-icon"></div>
+                                <div class="content-text">
+                                    <div class="text-line"></div>
+                                    <div class="text-line short"></div>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <div class="content-icon"></div>
+                                <div class="content-text">
+                                    <div class="text-line"></div>
+                                    <div class="text-line short"></div>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <div class="content-icon"></div>
+                                <div class="content-text">
+                                    <div class="text-line"></div>
+                                    <div class="text-line short"></div>
+                                </div>
+                            </div>
+                            <div class="tab-bar">
+                                <div class="tab-item active"></div>
+                                <div class="tab-item"></div>
+                                <div class="tab-item"></div>
+                                <div class="tab-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card portfolio-preview">
+                <div class="preview-header">
+                    <h3>Portfolio Website</h3>
+                    <span class="preview-tag">Web UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="browser-frame">
+                        <div class="browser-header">
+                            <div class="browser-actions">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="browser-address"></div>
+                        </div>
+                        <div class="web-frame">
+                            <div class="web-header">
+                                <div class="nav-item active"></div>
+                                <div class="nav-item"></div>
+                                <div class="nav-item"></div>
+                            </div>
+                            <div class="hero-section">
+                                <div class="hero-title"></div>
+                                <div class="hero-subtitle"></div>
+                            </div>
+                            <div class="grid-section">
+                                <div class="grid-item">
+                                    <div class="image-placeholder"></div>
+                                    <div class="item-title"></div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="image-placeholder"></div>
+                                    <div class="item-title"></div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="image-placeholder"></div>
+                                    <div class="item-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card resume-preview">
+                <div class="preview-header">
+                    <h3>Resume Builder</h3>
+                    <span class="preview-tag">Application UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="app-frame">
+                        <div class="sidebar">
+                            <div class="sidebar-item active"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="main-content">
+                            <div class="toolbar">
+                                <div class="tool-item"></div>
+                                <div class="tool-item"></div>
+                                <div class="tool-item"></div>
+                            </div>
+                            <div class="resume-section">
+                                <div class="section-header"></div>
+                                <div class="form-group">
+                                    <div class="input-line"></div>
+                                    <div class="input-line short"></div>
+                                </div>
+                            </div>
+                            <div class="resume-section">
+                                <div class="section-header"></div>
+                                <div class="form-group">
+                                    <div class="input-line"></div>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card ecommerce-preview">
+                <div class="preview-header">
+                    <h3>E-commerce Product</h3>
+                    <span class="preview-tag">Shop UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="browser-frame">
+                        <div class="browser-header">
+                            <div class="browser-actions">
+                                <span class="action red"></span>
+                                <span class="action yellow"></span>
+                                <span class="action green"></span>
+                            </div>
+                            <div class="browser-address">
+                                <div class="address-bar">
+                                    <i data-feather="lock" class="secure-icon"></i>
+                                    <span class="url-text">shop.example.com/product</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-frame">
+                            <div class="product-gallery">
+                                <div class="main-image">
+                                    <div class="image-placeholder">
+                                        <i data-feather="image"></i>
+                                        <div class="zoom-overlay">
+                                            <i data-feather="maximize-2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-row">
+                                    <div class="thumbnail active">
+                                        <div class="thumb-placeholder">
+                                            <i data-feather="image"></i>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <div class="thumb-placeholder">
+                                            <i data-feather="image"></i>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <div class="thumb-placeholder">
+                                            <i data-feather="image"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-title">
+                                    <div class="title-line"></div>
+                                    <div class="subtitle-line"></div>
+                                </div>
+                                <div class="product-price">
+                                    <div class="price-tag"></div>
+                                    <div class="price-meta">
+                                        <div class="discount-badge">-20%</div>
+                                        <div class="original-price"></div>
+                                    </div>
+                                </div>
+                                <div class="product-description">
+                                    <div class="text-line"></div>
+                                    <div class="text-line"></div>
+                                    <div class="text-line short"></div>
+                                </div>
+                                <div class="product-variants">
+                                    <div class="variant-group">
+                                        <div class="variant active"></div>
+                                        <div class="variant"></div>
+                                        <div class="variant"></div>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-selector">
+                                        <div class="qty-btn minus">
+                                            <i data-feather="minus"></i>
+                                        </div>
+                                        <div class="qty-value">1</div>
+                                        <div class="qty-btn plus">
+                                            <i data-feather="plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span class="btn-text">Add to Cart</span>
+                                    </div>
+                                </div>
+                                <div class="product-meta">
+                                    <div class="meta-item">
+                                        <i data-feather="truck"></i>
+                                        <span>Free Shipping</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i data-feather="shield"></i>
+                                        <span>Secure Payment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card music-preview">
+                <div class="preview-header">
+                    <h3>Music Player</h3>
+                    <span class="preview-tag">Media UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="music-frame">
+                            <div class="status-bar">
+                                <div class="time">9:41</div>
+                                <div class="status-icons">
+                                    <div class="signal"></div>
+                                    <div class="wifi"></div>
+                                    <div class="battery"></div>
+                                </div>
+                            </div>
+                            <div class="album-art">
+                                <div class="art-placeholder">
+                                    <i data-feather="music"></i>
+                                </div>
+                                <div class="visualizer">
+                                    <div class="bar bar1"></div>
+                                    <div class="bar bar2"></div>
+                                    <div class="bar bar3"></div>
+                                    <div class="bar bar4"></div>
+                                    <div class="bar bar5"></div>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <div class="track-title">
+                                    <div class="title-line"></div>
+                                </div>
+                                <div class="artist-name">
+                                    <div class="artist-line"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bg"></div>
+                                <div class="progress-fill"></div>
+                                <div class="progress-handle"></div>
+                            </div>
+                            <div class="time-info">
+                                <span class="current-time">2:45</span>
+                                <span class="total-time">4:30</span>
+                            </div>
+                            <div class="player-controls">
+                                <div class="control shuffle">
+                                    <i data-feather="shuffle"></i>
+                                </div>
+                                <div class="control prev">
+                                    <i data-feather="skip-back"></i>
+                                </div>
+                                <div class="control play active">
+                                    <i data-feather="play"></i>
+                                </div>
+                                <div class="control next">
+                                    <i data-feather="skip-forward"></i>
+                                </div>
+                                <div class="control repeat">
+                                    <i data-feather="repeat"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card dashboard-preview">
+                <div class="preview-header">
+                    <h3>Crypto Dashboard</h3>
+                    <span class="preview-tag">Analytics UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="dashboard-frame">
+                        <div class="dashboard-header">
+                            <div class="header-title">
+                                <div class="title-text"></div>
+                                <div class="subtitle-text"></div>
+                            </div>
+                            <div class="header-actions">
+                                <div class="date-picker"></div>
+                                <div class="refresh-btn">
+                                    <i data-feather="refresh-cw"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-grid">
+                            <div class="chart-card">
+                                <div class="chart-header">
+                                    <div class="chart-title"></div>
+                                    <div class="chart-legend">
+                                        <span class="legend-item"></span>
+                                        <span class="legend-item"></span>
+                                    </div>
+                                </div>
+                                <div class="price-chart">
+                                    <svg class="chart-svg" viewBox="0 0 300 150">
+                                        <path class="chart-line" d="M0,75 C50,85 100,45 150,65 S250,25 300,55" />
+                                        <path class="chart-line-shadow" d="M0,75 C50,85 100,45 150,65 S250,25 300,55 V150 H0 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i data-feather="trending-up"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <div class="stat-value"></div>
+                                        <div class="stat-label"></div>
+                                    </div>
+                                    <div class="stat-change positive">
+                                        <i data-feather="arrow-up"></i>
+                                        <span>2.5%</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i data-feather="dollar-sign"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <div class="stat-value"></div>
+                                        <div class="stat-label"></div>
+                                    </div>
+                                    <div class="stat-change negative">
+                                        <i data-feather="arrow-down"></i>
+                                        <span>1.2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trades-list">
+                                <div class="trades-header">
+                                    <div class="trades-title"></div>
+                                    <div class="trades-filter">
+                                        <i data-feather="filter"></i>
+                                    </div>
+                                </div>
+                                <div class="trade-item">
+                                    <div class="trade-icon buy">
+                                        <i data-feather="arrow-up-right"></i>
+                                    </div>
+                                    <div class="trade-info">
+                                        <div class="trade-details">
+                                            <div class="trade-amount"></div>
+                                            <div class="trade-time"></div>
+                                        </div>
+                                        <div class="trade-price positive"></div>
+                                    </div>
+                                </div>
+                                <div class="trade-item">
+                                    <div class="trade-icon sell">
+                                        <i data-feather="arrow-down-left"></i>
+                                    </div>
+                                    <div class="trade-info">
+                                        <div class="trade-details">
+                                            <div class="trade-amount"></div>
+                                            <div class="trade-time"></div>
+                                        </div>
+                                        <div class="trade-price negative"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card social-preview">
+                <div class="preview-header">
+                    <h3>Social Feed</h3>
+                    <span class="preview-tag">Social UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="social-frame">
+                            <div class="social-header">
+                                <div class="app-name"></div>
+                                <div class="header-actions">
+                                    <i data-feather="heart"></i>
+                                    <i data-feather="message-circle"></i>
+                                </div>
+                            </div>
+                            <div class="stories-row">
+                                <div class="story-item your-story">
+                                    <div class="story-avatar">
+                                        <i data-feather="plus"></i>
+                                    </div>
+                                    <div class="story-name">Your Story</div>
+                                </div>
+                                <div class="story-item active">
+                                    <div class="story-avatar">
+                                        <div class="avatar-ring"></div>
+                                    </div>
+                                    <div class="story-name"></div>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-avatar"></div>
+                                    <div class="story-name"></div>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-avatar"></div>
+                                    <div class="story-name"></div>
+                                </div>
+                            </div>
+                            <div class="feed-post">
+                                <div class="post-header">
+                                    <div class="post-avatar"></div>
+                                    <div class="post-info">
+                                        <div class="post-username"></div>
+                                        <div class="post-location"></div>
+                                    </div>
+                                    <div class="post-menu">
+                                        <i data-feather="more-horizontal"></i>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-image">
+                                        <i data-feather="image"></i>
+                                    </div>
+                                </div>
+                                <div class="post-actions">
+                                    <div class="action-group">
+                                        <i data-feather="heart"></i>
+                                        <i data-feather="message-circle"></i>
+                                        <i data-feather="send"></i>
+                                    </div>
+                                    <div class="action-save">
+                                        <i data-feather="bookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="post-likes"></div>
+                                <div class="post-caption">
+                                    <div class="caption-text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-card tasks-preview">
+                <div class="preview-header">
+                    <h3>Task Manager</h3>
+                    <span class="preview-tag">Productivity UI</span>
+                </div>
+                <div class="preview-content">
+                    <div class="app-frame">
+                        <div class="kanban-header">
+                            <div class="board-title">
+                                <div class="title-text"></div>
+                                <div class="board-meta"></div>
+                            </div>
+                            <div class="board-actions">
+                                <div class="search-bar">
+                                    <i data-feather="search"></i>
+                                </div>
+                                <div class="filter-btn">
+                                    <i data-feather="filter"></i>
+                                </div>
+                                <div class="add-btn">
+                                    <i data-feather="plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban-board">
+                            <div class="kanban-column todo">
+                                <div class="column-header">
+                                    <div class="column-title">
+                                        <div class="status-dot"></div>
+                                        <span>To Do</span>
+                                    </div>
+                                    <div class="task-count">3</div>
+                                </div>
+                                <div class="task-card priority-high">
+                                    <div class="task-title"></div>
+                                    <div class="task-meta">
+                                        <div class="task-tags">
+                                            <span class="tag"></span>
+                                            <span class="tag"></span>
+                                        </div>
+                                        <div class="task-due">
+                                            <i data-feather="clock"></i>
+                                            <span>Today</span>
+                                        </div>
+                                    </div>
+                                    <div class="task-footer">
+                                        <div class="assignee"></div>
+                                        <div class="task-actions">
+                                            <i data-feather="paperclip"></i>
+                                            <span>2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-card">
+                                    <div class="task-title"></div>
+                                    <div class="task-meta">
+                                        <div class="task-tags">
+                                            <span class="tag"></span>
+                                        </div>
+                                        <div class="task-due">
+                                            <i data-feather="clock"></i>
+                                            <span>Tomorrow</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kanban-column in-progress">
+                                <div class="column-header">
+                                    <div class="column-title">
+                                        <div class="status-dot"></div>
+                                        <span>In Progress</span>
+                                    </div>
+                                    <div class="task-count">2</div>
+                                </div>
+                                <div class="task-card active">
+                                    <div class="task-title"></div>
+                                    <div class="task-meta">
+                                        <div class="task-tags">
+                                            <span class="tag"></span>
+                                            <span class="tag"></span>
+                                        </div>
+                                        <div class="task-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill"></div>
+                                            </div>
+                                            <span>75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        feather.replace();
+
+        // Create background dots
+        const dotsContainer = document.querySelector('.dots');
+        for (let i = 0; i < 50; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            dot.style.left = `${Math.random() * 100}%`;
+            dot.style.top = `${Math.random() * 100}%`;
+            dotsContainer.appendChild(dot);
+        }
+
+        // Animate dots
+        anime({
+            targets: '.dot',
+            translateY: function() {
+                return anime.random(-15, 15);
+            },
+            translateX: function() {
+                return anime.random(-15, 15);
+            },
+            scale: function() {
+                return anime.random(0.8, 1.2);
+            },
+            easing: 'easeInOutQuad',
+            duration: 3000,
+            delay: anime.stagger(100),
+            loop: true,
+            direction: 'alternate'
+        });
+
+        // Animate title
+        anime({
+            targets: '.title',
+            opacity: [0, 1],
+            translateY: [20, 0],
+            duration: 1200,
+            easing: 'easeOutExpo'
+        });
+
+        const previews = {
+            mobile: document.querySelector('.mobile-preview'),
+            portfolio: document.querySelector('.portfolio-preview'),
+            resume: document.querySelector('.resume-preview'),
+            ecommerce: document.querySelector('.ecommerce-preview'),
+            music: document.querySelector('.music-preview'),
+            dashboard: document.querySelector('.dashboard-preview'),
+            social: document.querySelector('.social-preview'),
+            tasks: document.querySelector('.tasks-preview')
+        };
+
+        // Hide all previews initially
+        Object.values(previews).forEach(preview => {
+            preview.style.display = 'none';
+            preview.style.opacity = '0';
+        });
+
+        // Auto-cycling prompts
+        const prompts = [
+            {
+                text: "Create a modern mobile app home screen with dark theme...",
+                preview: 'mobile'
+            },
+            {
+                text: "Design a minimal portfolio website for a photographer...",
+                preview: 'portfolio'
+            },
+            {
+                text: "Generate a clean and professional resume builder UI...",
+                preview: 'resume'
+            },
+            {
+                text: "Design an e-commerce product page with image gallery...",
+                preview: 'ecommerce'
+            },
+            {
+                text: "Create a music player app interface with visualizer...",
+                preview: 'music'
+            },
+            {
+                text: "Generate a dashboard for crypto trading platform...",
+                preview: 'dashboard'
+            },
+            {
+                text: "Design a social media feed with stories and posts...",
+                preview: 'social'
+            },
+            {
+                text: "Create a task management app with kanban board...",
+                preview: 'tasks'
+            }
+        ];
+        
+        const promptInput = document.getElementById('promptInput');
+        let currentPrompt = 0;
+        let currentCharacter = 0;
+        let isDeleting = false;
+        let isWaiting = false;
+
+        function showPreview(type) {
+            // First, animate out the current preview
+            const currentPreview = Object.values(previews).find(p => p.style.display === 'block');
+            if (currentPreview) {
+                anime({
+                    targets: currentPreview,
+                    opacity: [1, 0],
+                    scale: [1, 0.98],
+                    duration: 400,
+                    easing: 'easeOutExpo',
+                    complete: () => {
+                        currentPreview.style.display = 'none';
+                        // Then, show and animate in the new preview
+                        const preview = previews[type];
+                        preview.style.display = 'block';
+                        preview.style.opacity = '0';
+                        
+                        const timeline = anime.timeline({
+                            easing: 'easeOutExpo',
+                            duration: 800
+                        });
+
+                        timeline
+                        .add({
+                            targets: preview,
+                            opacity: [0, 1],
+                            scale: [0.98, 1],
+                            translateY: [10, 0],
+                        })
+                        .add({
+                            targets: preview.querySelectorAll('.preview-header *'),
+                            opacity: [0, 1],
+                            translateY: [10, 0],
+                            delay: anime.stagger(50),
+                            duration: 600
+                        }, '-=600');
+
+                        // Add specific animations based on preview type
+                        if (type === 'mobile') {
+                            timeline
+                            .add({
+                                targets: '.content-block',
+                                translateX: [-20, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600
+                            }, '-=400');
+                        } else if (type === 'portfolio') {
+                            timeline
+                            .add({
+                                targets: '.grid-item',
+                                scale: [0.8, 1],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600,
+                                easing: 'easeOutElastic(1, .5)'
+                            }, '-=400');
+                        } else if (type === 'resume') {
+                            timeline
+                            .add({
+                                targets: ['.sidebar-item', '.form-group'],
+                                translateY: [10, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(50),
+                                duration: 600
+                            }, '-=400');
+                        } else if (type === 'ecommerce') {
+                            timeline
+                            .add({
+                                targets: '.product-gallery .main-image',
+                                scale: [0.9, 1],
+                                opacity: [0, 1],
+                                duration: 800
+                            }, '-=400')
+                            .add({
+                                targets: '.thumbnail',
+                                translateY: [20, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600
+                            }, '-=600')
+                            .add({
+                                targets: ['.product-title', '.product-price', '.text-line'],
+                                translateX: [-20, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(50),
+                                duration: 600
+                            }, '-=400')
+                            .add({
+                                targets: '.product-actions > *',
+                                scale: [0.9, 1],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 400
+                            }, '-=200');
+                        } else if (type === 'music') {
+                            timeline
+                            .add({
+                                targets: '.album-art',
+                                scale: [0.8, 1],
+                                opacity: [0, 1],
+                                duration: 800
+                            }, '-=400')
+                            .add({
+                                targets: '.visualizer .bar',
+                                scaleY: [0.3, 1],
+                                delay: anime.stagger(100),
+                                duration: 600,
+                                direction: 'alternate',
+                                loop: true,
+                                easing: 'easeInOutSine'
+                            }, '-=400')
+                            .add({
+                                targets: ['.track-title', '.artist-name', '.progress-bar'],
+                                translateY: [10, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600
+                            }, '-=600');
+                        } else if (type === 'dashboard') {
+                            timeline
+                            .add({
+                                targets: '.chart-line',
+                                strokeDashoffset: [anime.setDashoffset, 0],
+                                easing: 'easeInOutSine',
+                                duration: 1200,
+                                delay: function(el, i) { return i * 250 }
+                            }, '-=400')
+                            .add({
+                                targets: ['.stat-card', '.trade-item'],
+                                translateY: [20, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600
+                            }, '-=800');
+                        } else if (type === 'social') {
+                            timeline
+                            .add({
+                                targets: '.story-item',
+                                scale: [0.8, 1],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600,
+                                easing: 'easeOutElastic(1, .5)'
+                            }, '-=400')
+                            .add({
+                                targets: '.feed-post',
+                                translateY: [20, 0],
+                                opacity: [0, 1],
+                                duration: 600
+                            }, '-=200');
+                        } else if (type === 'tasks') {
+                            timeline
+                            .add({
+                                targets: '.kanban-column',
+                                translateY: [20, 0],
+                                opacity: [0, 1],
+                                delay: anime.stagger(200),
+                                duration: 600
+                            }, '-=400')
+                            .add({
+                                targets: '.task-card',
+                                scale: [0.95, 1],
+                                opacity: [0, 1],
+                                delay: anime.stagger(100),
+                                duration: 600
+                            }, '-=400');
+                        }
+                    }
+                });
+            } else {
+                // First preview (no fade out needed)
+                const preview = previews[type];
+                preview.style.display = 'block';
+                anime({
+                    targets: preview,
+                    opacity: [0, 1],
+                    scale: [0.98, 1],
+                    duration: 800,
+                    easing: 'easeOutExpo'
+                });
+            }
+        }
+
+        function typePrompt() {
+            const prompt = prompts[currentPrompt];
+            
+            if (isDeleting) {
+                promptInput.placeholder = prompt.text.substring(0, currentCharacter - 1);
+                currentCharacter--;
+            } else {
+                promptInput.placeholder = prompt.text.substring(0, currentCharacter + 1);
+                currentCharacter++;
+            }
+
+            if (!isDeleting && currentCharacter === prompt.text.length) {
+                isWaiting = true;
+                showPreview(prompt.preview);
+                setTimeout(() => {
+                    isDeleting = true;
+                    isWaiting = false;
+                }, 2000); // Show preview for 2 seconds before starting to delete
+            }
+
+            if (isDeleting && currentCharacter === 0) {
+                isDeleting = false;
+                currentPrompt = (currentPrompt + 1) % prompts.length;
+            }
+
+            const typingSpeed = isDeleting ? 30 : 12; // Reduced from 25 to 12 for even faster typing
+            if (!isWaiting) {
+                setTimeout(typePrompt, typingSpeed);
+            } else {
+                setTimeout(typePrompt, 2000);
+            }
+        }
+
+        typePrompt();
+    </script>
+</body>
+</html> 
